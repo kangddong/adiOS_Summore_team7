@@ -23,6 +23,7 @@
 		B929C8232A46C1C300A5222D /* Parcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C81E2A46C19800A5222D /* Parcel.swift */; };
 		B929C8262A46C71100A5222D /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C8252A46C71100A5222D /* UserDefaults+.swift */; };
 		B929C8272A46C71800A5222D /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C8252A46C71100A5222D /* UserDefaults+.swift */; };
+		EFE48E9A2A4738E200D401BB /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE48E982A4738D700D401BB /* DeliveryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B929C8242A46C64100A5222D /* ParcelV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParcelV2.entitlements; sourceTree = "<group>"; };
 		B929C8252A46C71100A5222D /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		B929C8282A46D01100A5222D /* ParcelV2WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParcelV2WidgetExtension.entitlements; sourceTree = "<group>"; };
+		EFE48E982A4738D700D401BB /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				B929C80D2A46BCD400A5222D /* ParcelV2WidgetBundle.swift */,
 				B929C80F2A46BCD400A5222D /* ParcelV2Widget.swift */,
+				EFE48E982A4738D700D401BB /* DeliveryView.swift */,
 				B929C8202A46C1A400A5222D /* APIClient.swift */,
 				B929C81E2A46C19800A5222D /* Parcel.swift */,
 				B929C8112A46BCD400A5222D /* ParcelV2Widget.intentdefinition */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B929C8152A46BCD500A5222D /* ParcelV2Widget.intentdefinition in Sources */,
+				EFE48E9A2A4738E200D401BB /* DeliveryView.swift in Sources */,
 				B929C8102A46BCD400A5222D /* ParcelV2Widget.swift in Sources */,
 				B929C80E2A46BCD400A5222D /* ParcelV2WidgetBundle.swift in Sources */,
 				B929C8232A46C1C300A5222D /* Parcel.swift in Sources */,
