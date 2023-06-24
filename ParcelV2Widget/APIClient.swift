@@ -24,11 +24,8 @@ final class APIClient {
           var urlRequest = URLRequest(url: url)
           urlRequest.httpMethod = "GET"
           return try await requestData(urlRequest: urlRequest)
-      } else {
-          let url = URL(string: "https://apis.tracker.delivery/carriers/kr.kdexp/tracks/3112331831600")!
-          var urlRequest = URLRequest(url: url)
-          urlRequest.httpMethod = "GET"
-          return try await requestData(urlRequest: urlRequest)
       }
+      
+      return nil
   }
 }
