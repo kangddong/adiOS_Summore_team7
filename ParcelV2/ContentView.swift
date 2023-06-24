@@ -10,7 +10,7 @@ import WidgetKit
 
 struct ContentView: View {
     
-    @State var invoiceNumber: String = ""
+    @State var invoiceNumber: String = "3112331831600"
     
     var body: some View {
         VStack(spacing: 8) {
