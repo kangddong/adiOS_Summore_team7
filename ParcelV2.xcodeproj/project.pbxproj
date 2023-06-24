@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B929C7F52A46BCB600A5222D /* ParcelV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C7F42A46BCB600A5222D /* ParcelV2App.swift */; };
+		B929C7F72A46BCB600A5222D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C7F62A46BCB600A5222D /* ContentView.swift */; };
+		B929C7F92A46BCB700A5222D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B929C7F82A46BCB700A5222D /* Assets.xcassets */; };
+		B929C7FC2A46BCB700A5222D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B929C7FB2A46BCB700A5222D /* Preview Assets.xcassets */; };
+		B929C8092A46BCD400A5222D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B929C8082A46BCD400A5222D /* WidgetKit.framework */; };
+		B929C80B2A46BCD400A5222D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B929C80A2A46BCD400A5222D /* SwiftUI.framework */; };
+		B929C80E2A46BCD400A5222D /* ParcelV2WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C80D2A46BCD400A5222D /* ParcelV2WidgetBundle.swift */; };
+		B929C8102A46BCD400A5222D /* ParcelV2Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C80F2A46BCD400A5222D /* ParcelV2Widget.swift */; };
+		B929C8132A46BCD500A5222D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B929C8122A46BCD500A5222D /* Assets.xcassets */; };
+		B929C8152A46BCD500A5222D /* ParcelV2Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B929C8112A46BCD400A5222D /* ParcelV2Widget.intentdefinition */; };
+		B929C8162A46BCD500A5222D /* ParcelV2Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B929C8112A46BCD400A5222D /* ParcelV2Widget.intentdefinition */; };
+		B929C8192A46BCD500A5222D /* ParcelV2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B929C8062A46BCD400A5222D /* ParcelV2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B929C8222A46C1B700A5222D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C8202A46C1A400A5222D /* APIClient.swift */; };
+		B929C8232A46C1C300A5222D /* Parcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C81E2A46C19800A5222D /* Parcel.swift */; };
+		B929C8262A46C71100A5222D /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C8252A46C71100A5222D /* UserDefaults+.swift */; };
+		B929C8272A46C71800A5222D /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929C8252A46C71100A5222D /* UserDefaults+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B929C8172A46BCD500A5222D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B929C7E92A46BCB600A5222D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B929C8052A46BCD400A5222D;
+			remoteInfo = ParcelV2WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B929C81D2A46BCD500A5222D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B929C8192A46BCD500A5222D /* ParcelV2WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B929C7F12A46BCB600A5222D /* ParcelV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParcelV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B929C7F42A46BCB600A5222D /* ParcelV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelV2App.swift; sourceTree = "<group>"; };
+		B929C7F62A46BCB600A5222D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B929C7F82A46BCB700A5222D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B929C7FB2A46BCB700A5222D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B929C8062A46BCD400A5222D /* ParcelV2WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ParcelV2WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B929C8082A46BCD400A5222D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B929C80A2A46BCD400A5222D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B929C80D2A46BCD400A5222D /* ParcelV2WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelV2WidgetBundle.swift; sourceTree = "<group>"; };
+		B929C80F2A46BCD400A5222D /* ParcelV2Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelV2Widget.swift; sourceTree = "<group>"; };
+		B929C8112A46BCD400A5222D /* ParcelV2Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ParcelV2Widget.intentdefinition; sourceTree = "<group>"; };
+		B929C8122A46BCD500A5222D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B929C8142A46BCD500A5222D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B929C81E2A46C19800A5222D /* Parcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parcel.swift; sourceTree = "<group>"; };
+		B929C8202A46C1A400A5222D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B929C8242A46C64100A5222D /* ParcelV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParcelV2.entitlements; sourceTree = "<group>"; };
+		B929C8252A46C71100A5222D /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B929C7EE2A46BCB600A5222D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B929C8032A46BCD400A5222D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B929C80B2A46BCD400A5222D /* SwiftUI.framework in Frameworks */,
+				B929C8092A46BCD400A5222D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B929C7E82A46BCB600A5222D = {
+			isa = PBXGroup;
+			children = (
+				B929C7F32A46BCB600A5222D /* ParcelV2 */,
+				B929C80C2A46BCD400A5222D /* ParcelV2Widget */,
+				B929C8072A46BCD400A5222D /* Frameworks */,
+				B929C7F22A46BCB600A5222D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B929C7F22A46BCB600A5222D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B929C7F12A46BCB600A5222D /* ParcelV2.app */,
+				B929C8062A46BCD400A5222D /* ParcelV2WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B929C7F32A46BCB600A5222D /* ParcelV2 */ = {
+			isa = PBXGroup;
+			children = (
+				B929C8242A46C64100A5222D /* ParcelV2.entitlements */,
+				B929C7F42A46BCB600A5222D /* ParcelV2App.swift */,
+				B929C7F62A46BCB600A5222D /* ContentView.swift */,
+				B929C8252A46C71100A5222D /* UserDefaults+.swift */,
+				B929C7F82A46BCB700A5222D /* Assets.xcassets */,
+				B929C7FA2A46BCB700A5222D /* Preview Content */,
+			);
+			path = ParcelV2;
+			sourceTree = "<group>";
+		};
+		B929C7FA2A46BCB700A5222D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B929C7FB2A46BCB700A5222D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B929C8072A46BCD400A5222D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B929C8082A46BCD400A5222D /* WidgetKit.framework */,
+				B929C80A2A46BCD400A5222D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B929C80C2A46BCD400A5222D /* ParcelV2Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B929C80D2A46BCD400A5222D /* ParcelV2WidgetBundle.swift */,
+				B929C80F2A46BCD400A5222D /* ParcelV2Widget.swift */,
+				B929C8202A46C1A400A5222D /* APIClient.swift */,
+				B929C81E2A46C19800A5222D /* Parcel.swift */,
+				B929C8112A46BCD400A5222D /* ParcelV2Widget.intentdefinition */,
+				B929C8122A46BCD500A5222D /* Assets.xcassets */,
+				B929C8142A46BCD500A5222D /* Info.plist */,
+			);
+			path = ParcelV2Widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B929C7F02A46BCB600A5222D /* ParcelV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B929C7FF2A46BCB700A5222D /* Build configuration list for PBXNativeTarget "ParcelV2" */;
+			buildPhases = (
+				B929C7ED2A46BCB600A5222D /* Sources */,
+				B929C7EE2A46BCB600A5222D /* Frameworks */,
+				B929C7EF2A46BCB600A5222D /* Resources */,
+				B929C81D2A46BCD500A5222D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B929C8182A46BCD500A5222D /* PBXTargetDependency */,
+			);
+			name = ParcelV2;
+			productName = ParcelV2;
+			productReference = B929C7F12A46BCB600A5222D /* ParcelV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B929C8052A46BCD400A5222D /* ParcelV2WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B929C81A2A46BCD500A5222D /* Build configuration list for PBXNativeTarget "ParcelV2WidgetExtension" */;
+			buildPhases = (
+				B929C8022A46BCD400A5222D /* Sources */,
+				B929C8032A46BCD400A5222D /* Frameworks */,
+				B929C8042A46BCD400A5222D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParcelV2WidgetExtension;
+			productName = ParcelV2WidgetExtension;
+			productReference = B929C8062A46BCD400A5222D /* ParcelV2WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B929C7E92A46BCB600A5222D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B929C7F02A46BCB600A5222D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B929C8052A46BCD400A5222D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B929C7EC2A46BCB600A5222D /* Build configuration list for PBXProject "ParcelV2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B929C7E82A46BCB600A5222D;
+			productRefGroup = B929C7F22A46BCB600A5222D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B929C7F02A46BCB600A5222D /* ParcelV2 */,
+				B929C8052A46BCD400A5222D /* ParcelV2WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B929C7EF2A46BCB600A5222D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B929C7FC2A46BCB700A5222D /* Preview Assets.xcassets in Resources */,
+				B929C7F92A46BCB700A5222D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B929C8042A46BCD400A5222D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B929C8132A46BCD500A5222D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B929C7ED2A46BCB600A5222D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B929C8262A46C71100A5222D /* UserDefaults+.swift in Sources */,
+				B929C8162A46BCD500A5222D /* ParcelV2Widget.intentdefinition in Sources */,
+				B929C7F72A46BCB600A5222D /* ContentView.swift in Sources */,
+				B929C7F52A46BCB600A5222D /* ParcelV2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B929C8022A46BCD400A5222D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B929C8152A46BCD500A5222D /* ParcelV2Widget.intentdefinition in Sources */,
+				B929C8102A46BCD400A5222D /* ParcelV2Widget.swift in Sources */,
+				B929C80E2A46BCD400A5222D /* ParcelV2WidgetBundle.swift in Sources */,
+				B929C8232A46C1C300A5222D /* Parcel.swift in Sources */,
+				B929C8272A46C71800A5222D /* UserDefaults+.swift in Sources */,
+				B929C8222A46C1B700A5222D /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B929C8182A46BCD500A5222D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B929C8052A46BCD400A5222D /* ParcelV2WidgetExtension */;
+			targetProxy = B929C8172A46BCD500A5222D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B929C7FD2A46BCB700A5222D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B929C7FE2A46BCB700A5222D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B929C8002A46BCB700A5222D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParcelV2/ParcelV2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ParcelV2/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BY5MQ6875;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seokho.ParcelV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B929C8012A46BCB700A5222D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParcelV2/ParcelV2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ParcelV2/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BY5MQ6875;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seokho.ParcelV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B929C81B2A46BCD500A5222D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5BY5MQ6875;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParcelV2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ParcelV2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seokho.ParcelV2.ParcelV2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B929C81C2A46BCD500A5222D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5BY5MQ6875;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParcelV2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ParcelV2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seokho.ParcelV2.ParcelV2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B929C7EC2A46BCB600A5222D /* Build configuration list for PBXProject "ParcelV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B929C7FD2A46BCB700A5222D /* Debug */,
+				B929C7FE2A46BCB700A5222D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B929C7FF2A46BCB700A5222D /* Build configuration list for PBXNativeTarget "ParcelV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B929C8002A46BCB700A5222D /* Debug */,
+				B929C8012A46BCB700A5222D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B929C81A2A46BCD500A5222D /* Build configuration list for PBXNativeTarget "ParcelV2WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B929C81B2A46BCD500A5222D /* Debug */,
+				B929C81C2A46BCD500A5222D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B929C7E92A46BCB600A5222D /* Project object */;
+}
